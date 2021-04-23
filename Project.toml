@@ -1,0 +1,9 @@
+name = "OptimalTransport1D"
+uuid = "6979899b-0f91-4b20-a327-80ec5b7ebc13"
+authors = ["Ismael Medina <ismaelmedinasuarez@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestSetExtensions = "98d24dd4-01ad-11ea-1b02-c9a08f80db04"
