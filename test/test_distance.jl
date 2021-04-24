@@ -29,5 +29,11 @@ end
     a2 = a[a.>0]; x2 = x[a.>0]
     b2 = b[b.>0]; y2 = y[b.>0]
 
+    @test OT.W1_1D(a,b) ≈ OT.solve_convex_OT_cost(a, b, x, y, c)
+
     @test OT.W1_1D(a,b) ≈ OT.solve_convex_OT_cost(a2, b2, x2, y2, c)
+
+    # It is symmetric (as long as the cost is)
+    @test OT.solve_convex_OT_cost(b2, a2, y2, x2, c) ≈ OT.solve_convex_OT_cost(a2, b2, x2, y2, c)
+    
 end
